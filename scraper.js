@@ -5,8 +5,9 @@ async function fetchExchangeRates() {
   try {
     console.log("👀 Launching Puppeteer...");
     browser = await puppeteer.launch({
-      headless: "new",
-      args: ["--no-sandbox", "--disable-setuid-sandbox"]
+  headless: "new",
+  executablePath: "/opt/render/.cache/puppeteer/chrome/linux-138.0.7204.168/chrome-linux64/chrome",
+  args: ["--no-sandbox", "--disable-setuid-sandbox"]
     });
 
     const page = await browser.newPage();
