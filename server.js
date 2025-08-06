@@ -1,5 +1,5 @@
 const express = require('express');
-const { scrapeExchangeRates } = require('./scraper');
+const fetchExchangeRates = require("./scraper");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
 app.get('/rate', async (req, res) => {
     try {
         console.log('Starting exchange rate scraping...');
-        const rates = await scrapeExchangeRates();
+        const rates = await fetchExchangeRates();
         
         if (!rates) {
             return res.status(500).json({
