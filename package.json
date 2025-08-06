@@ -1,11 +1,13 @@
 {
   "name": "currency-bot",
   "version": "1.0.0",
-  "description": "Exchange Rate Scraper for Ardshinbank",
+  "description": "Currency scraper for Ardshinbank",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node server.js"
   },
+  "author": "Denis Gulyar",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.19.2",
     "puppeteer": "^24.15.0"
