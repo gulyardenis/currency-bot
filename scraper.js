@@ -1,24 +1,10 @@
 const puppeteer = require("puppeteer");
-const { join } = require("path");
-
-const executablePath = join(
-  "/opt",
-  "render",
-  ".cache",
-  "puppeteer",
-  "chrome",
-  "linux-138.0.7204.168",
-  "chrome-linux64",
-  "chrome"
-);
 
 async function fetchExchangeRates() {
   let browser;
   try {
-    console.log("👀 Launching Puppeteer...");
     browser = await puppeteer.launch({
       headless: "new",
-      executablePath,
       args: ["--no-sandbox", "--disable-setuid-sandbox"]
     });
 
