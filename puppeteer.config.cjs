@@ -9,6 +9,7 @@ module.exports = {
       'puppeteer',
       'chrome',
       'linux-138.0.7204.168',
+      'chrome-linux64',
       'chrome'
     ),
     headless: 'new',
