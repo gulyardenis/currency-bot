@@ -1,15 +1,12 @@
 {
-  "name": "workspace",
+  "name": "currency-bot",
   "version": "1.0.0",
-  "main": "scraper.js",
+  "description": "Exchange Rate Scraper for Ardshinbank",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "postinstall": "puppeteer browsers install chrome"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "express": "^4.19.2",
     "puppeteer": "^24.15.0"
